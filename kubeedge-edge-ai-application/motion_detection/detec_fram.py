@@ -103,8 +103,8 @@ def storeVideo(num):
     over = False
     global flag
     out_fps = 20.0  # 输出文件的帧�?
-    fourcc = cv2.VideoWriter_fourcc(*'XVID')
-    out1 = cv2.VideoWriter('./data/video/' + str(num) + ".avi", fourcc, out_fps, (640,480))
+    fourcc = cv2.VideoWriter_fourcc(*'MJPG')
+    out1 = cv2.VideoWriter('./data/video/' + str(num) + ".mp4", fourcc, out_fps, (640,480))
     start = time.time()
     count = 5
     image0=np.zeros(image.shape)
